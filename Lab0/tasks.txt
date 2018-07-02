@@ -1,0 +1,2 @@
+One can change the commit message by typing: git commit --amend -m "Adding Task 6" 
+This amends the message from its original text, reading "Adding Task 8." 
