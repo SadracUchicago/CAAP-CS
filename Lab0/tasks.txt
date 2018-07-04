@@ -1,6 +1,18 @@
+TASK 6: 
+
 One can change the commit message by typing: git commit --amend -m "Adding Task 6" 
 This amends the message from its original text, reading "Adding Task 8." 
 
+Task 7: 
+One can clone the FZF repository via: git clone https://github.com/junegunn/fzf
+Shortly after one can find the "--no-mouse" commit by doing: git log > find.txt 
+Opening the file in Sublime and then searching for "no--mouse" prompts the SHA (c7e86ad4f1061b0cad9f64a6c9ad26f386bc1168)
+The commit essay is "Add --no-mouse option to replace FZF_MOUSE_ENABLED" 
 
-Any content-- change-- Task (8). 
+Task 8:  
 
+I used the command "git diff" [file] to see the difference
+
+
+git rm Lab0/mistake.txt Task (9)
+git commit -m "Removal of mistake.txt" 
