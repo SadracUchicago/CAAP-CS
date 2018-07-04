@@ -1,3 +1,19 @@
+Task 1:
+git add test.txt 
+git commit -m "Updated task.txt" 
+Listed on commits "tested" 
+
+Task 2: 
+All directories and files are present.
+
+Task 3: 
+Listed under commit of "A few more changes."
+
+Task 4: 
+Used git.pull to get files locally 
+
+Task 5: Commit README file
+
 TASK 6: 
 
 One can change the commit message by typing: git commit --amend -m "Adding Task 6" 
@@ -9,10 +25,40 @@ Shortly after one can find the "--no-mouse" commit by doing: git log > find.txt
 Opening the file in Sublime and then searching for "no--mouse" prompts the SHA (c7e86ad4f1061b0cad9f64a6c9ad26f386bc1168)
 The commit essay is "Add --no-mouse option to replace FZF_MOUSE_ENABLED" 
 
+source: 
+https://git-scm.com/docs/git-clone
+
+source: https://stackoverflow.com/questions/10330425/how-do-i-export-a-git-log-to-a-text-file
+
 Task 8:  
 
-I used the command "git diff" [file] to see the difference
+I used the command "git diff" to see the difference
+https://git-scm.com/docs/git-diff
 
+Task 9: 
+The command to remove a file from the repository goes as follows: 
 
-git rm Lab0/mistake.txt Task (9)
+git rm Lab0/mistake.txt 
 git commit -m "Removal of mistake.txt" 
+
+Task 10: 
+
+The process of reverting commits involves checking for the commit SHA 
+This can be found by typing: git log
+After finding the SHA, the process of reverting then goes as follows: 
+For commit "Mistake 1 (task 10" the command is: git revert 7de150f1f004218b2d0e63e17a6f80d0e722504c
+For commit "Mistake 2 (task 10)" the command is: git revert 17bda404291cb8fe9f69ad64033e6f02370a984e
+
+Task 11: added you as collaborator 
+
+
+
+MAJOR SOURCES: 
+GIT DOCUMENTATION 
+
+https://git-scm.com/doc
+
+
+
+
+
