@@ -1,10 +1,10 @@
 Task 1:
-git add test.txt 
-git commit -m "Updated task.txt" 
+git add test.txt (this adds the file)
+git commit -m "Updated task.txt" (this creates a commit)
 Listed on commits "tested" 
 
 Task 2: 
-All directories and files are present.
+All directories and files are present. (you must use git add for the contents). 
 
 Task 3: 
 Listed under commit of "A few more changes."
@@ -32,14 +32,15 @@ source: https://stackoverflow.com/questions/10330425/how-do-i-export-a-git-log-t
 
 Task 8:  
 
-I used the command "git diff" to see the difference
-https://git-scm.com/docs/git-diff
+I used the command "git diff" to see the difference (almost like a log of the changes before commit). 
+
+source: https://git-scm.com/docs/git-diff
 
 Task 9: 
 The command to remove a file from the repository goes as follows: 
 
-git rm Lab0/mistake.txt 
-git commit -m "Removal of mistake.txt" 
+git rm Lab0/mistake.txt (this removes the file). 
+git commit -m "Removal of mistake.txt" (this creates a commit for the removal of the file.)
 
 Task 10: 
 
