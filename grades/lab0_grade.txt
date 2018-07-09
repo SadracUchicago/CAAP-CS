@@ -1,0 +1,27 @@
+Task 1: 10 points
+Task 2: 2 points
+	--> Missing directories
+
+Task 3: 5 points
+Task 4: 5 points
+Task 5:	0 points
+	--> No record that this was done.
+	--> How test file should look:
+		CAAP - Introduction to Software Development
+		Git is pretty cool
+		One more change!
+		Hopefully our last change...
+	--> How readme file should look:
+		Name
+		CNET
+		Git is pretty cool
+		Hopefully our last change...
+Task 6: 5 points
+Task 7: 5 points
+Task 8: 5 points
+Task 9: 5 points
+Task 10: 5 points
+Task 11: 2 points
+Total: 53/60
+
+Great job! Come to office hours so we cna figure out what happened to all your directories.
