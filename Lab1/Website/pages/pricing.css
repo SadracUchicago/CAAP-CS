@@ -2,7 +2,7 @@
     margin: 0;
 }
 .menu_navigation {
-    list-style: none; 
+    list-style-type: none; 
     margin-top: 13px;
     float: right;
 }
@@ -21,10 +21,10 @@
     margin-top: 10px; 
     display: inline-block;
     background-color:  black;
-    border: 1px solid #FF8000;
+    border: 1px solid rgb(68, 157, 72);
     border-radius: 1px 1px; 
     color: white; 
-    box-shadow: 5px 5px #FF8000;
+    box-shadow: 5px 5px rgb(68, 157, 72);
 
 
 }
@@ -36,11 +36,11 @@
 }
 
 .menu_navigation li a:hover {
-    color: #FF8000;
+    color: rgb(68, 157, 72);
     margin-top: 10px; 
     display: inline-block;
     background-color:  black;
-    border: 1px solid #FF8000;
+    border: 1px solid rgb(68, 157, 72);
     border-radius: 1px 1px;  
     box-shadow: 5px 5px;
 
@@ -64,14 +64,106 @@ p{
     font-size: 40px;
     text-align: left;
     user-select: none;
-        font-family: 'Montserrat', sans-serif; 
+    font-family: 'Montserrat', sans-serif; 
+
+
+}
+/**/
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+  background-image: url(images/dan2.jpg);
+  height: 100vh;
+  background-size: cover;
+
+}
+
+.prices {
+  float: left;
+  padding: 15px;
+  margin-top: 70px; 
+  width: 33.333333333333%;
+}
+.products {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: 'Montserrat', sans-serif; 
+  background-color: #F5F5F5;
 
 
 }
 
 
+.products .product_description {
+  background-color: black; 
+  font-size: 25px; 
+  color: white;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(68, 157, 72);
+  text-shadow: 2px 2px 4px #000000;
+
+}
+
+.products:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.products li {
+    border-bottom: 1px solid #DCDCDC;
+    padding: 15px;
+    text-align: center; 
+}
+.product .pricing {
+  background-color: black; 
+  font-size: 15px;
+}
+
+.btn {
+    background-color: rgb(68, 157, 72);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+p {
+  text-align: center;
+  font-style: italic; 
+  color: white;
+  margin-top: 10px;
+  -webkit-filter: drop-shadow(10px 10px 15px rgba(0,0,0,.75));
+  font-size: 20px;
+  width: 490px;
+  margin-left: 485px;
+  font-family: times;
+  margin-left: 520px;
+  margin-top: 35px;
+}
 
 
+hr {
+    display: block;
+    height: 7px;
+    border: 0;
+    border-top: 7px solid white;
+    padding: 0;
+    -webkit-filter: drop-shadow(3px 5px 3px rgba(0,0,0,.75));
+    margin-top: 28px;
+    margin-bottom: 30px;
+
+}
 
 /*ww*/
 #pageloader{

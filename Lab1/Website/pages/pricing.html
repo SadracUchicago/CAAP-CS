@@ -1,6 +1,10 @@
 <!DOCTYPE HTML> 
+<head>
+  
 <link rel="stylesheet" href="pricing.css">
+<link rel="stylesheet" type="text/css" href="portfolio.css">
 
+</head>
 <body>
 <script>
 
@@ -91,32 +95,121 @@
 <header>
 <div class="anti-column">
     <div class="logo">
-    <img dragabble="false" src="website_logo.png"> 
+    <img dragabble="false" src="website_logo.png" alt="Logo: SadPhoto"> 
   <ul class="menu_navigation">
     <li><a href="../index.html">MAIN</a></li>
-    <li><a href="portfolio.html">PROFILE</a></li>
+    <li><a href="about.html">PROFILE</a></li>
     <li class="active"><a href="pages/pricing.html">PRICING</a></li>
     <li><a href="pages/contact.html">CONTACT ME</a></li> 
   </ul>
-  <p>SadPhoto</p>
 </header>
 
 
-</body>
+
+<h1>Gallery</h1>
+
+<hr> 
+
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="images/edit.jpg" style="width:100%">
+  <img class="mySlides" src="images/edit2.jpg" style="width:100%">
+  <img class="mySlides" src="images/NICE.jpg" style="width:100%">
+  <img class="mySlides" src="images/anjo1.png" style="width:100%">
+  <img class="mySlides" src="images/anjo2.jpg" style="width:100%">
+  <img class="mySlides" src="images/anjo2.png" style="width:100%">
+  <img class="mySlides" src="images/anjo3.jpg" style="width:100%">
+  <img class="mySlides" src="images/anjo4.jpg" style="width:100%">
+  <img class="mySlides" src="images/1.jpg" style="width:100%">
+  <img class="mySlides" src="images/2.jpg" style="width:100%">
+  <img class="mySlides" src="images/3.jpg" style="width:100%">
+  <img class="mySlides" src="images/bettergirl1.png" style="width:100%">
+  <img class="mySlides" src="images/dod2.png" style="width:100%">
+
+
+
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+
+<main>
+    <article>
+          <p class="Quote">Here is a selected gallery of my authentic work (my actual real life work), so you-- the customer-- can get a taste of what my product entails</p>
+    </article>
+</main>
+
+<hr> 
+
+<h1>Pricing</h1>
+
+
+<main>
+    <article>
+          <p class="Quote">Here are my affordable prices, which encompass a wide array of both need ands and purposes.</p>
+    </article>
+</main>
+
 
 
 <div class="prices">
   <ul class="products">
     <li class="product_description">Photo Shoot</li>
-    <li class="pricing">$75/ per session</li>
+    <li class="pricing">$75 per session</li>
     <li>10 photos per session</li>
     <li>Professionaly Edited</li>
-    <li class="button"><a href="pages/pricing.html">ORDER NOW</a></li>
+    <li class="pricing"><a href="pages/pricing.html" class="btn">BUY</a></li>
   </ul>
 </div>
 
+<div class="prices">
+  <ul class="products">
+    <li class="product_description">Portrait & Family Photography</li>
+    <li class="pricing">$205 per session</li>
+    <li>7 photos per session</li>
+    <li>Professionaly Edited</li>
+    <li class="pricing"><a href="pages/pricing.html" class="btn">BUY</a></li>
+  </ul>
+</div>
+
+<div class="prices">
+  <ul class="products">
+    <li class="product_description">Build Your Own Package</li>
+    <li class="pricing">$400 per session</li>
+    <li>10 photos per session (of your choice in any setting)</li>
+    <li>Professionaly Edited</li>
+    <li class="pricing"><a href="pages/pricing.html" class="btn">BUY</a></li>
+  </ul>
+</div>
+
+</body>
+</html> 
 
 
+</body> 
 
 
 
