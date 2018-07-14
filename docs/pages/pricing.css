@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+}
+.menu_navigation {
+    list-style-type: none; 
+    margin-top: 13px;
+    float: right;
+}
+
+.menu_navigation li a {
+    font-family: verdana; 
+    text-decoration: none;
+    font-size: 15px; 
+    padding: 5px;
+    color: white;
+    
+
+    
+}
+.menu_navigation li.active a {
+    margin-top: 10px; 
+    display: inline-block;
+    background-color:  black;
+    border: 1px solid rgb(68, 157, 72);
+    border-radius: 1px 1px; 
+    color: white; 
+    box-shadow: 5px 5px rgb(68, 157, 72);
+
+
+}
+.menu_navigation li {
+    display: inline;
+    padding: 30px;
+
+
+}
+
+.menu_navigation li a:hover {
+    color: rgb(68, 157, 72);
+    margin-top: 10px; 
+    display: inline-block;
+    background-color:  black;
+    border: 1px solid rgb(68, 157, 72);
+    border-radius: 1px 1px;  
+    box-shadow: 5px 5px;
+
+}
+
+.anti-column {
+    background-color: black; 
+    padding: 10px;
+}
+
+.logo img {
+    height: 80px;
+    padding-left: 100px;
+
+}
+
+p{
+    color: white;
+    margin-top: -60px;
+    margin-left: 200px;
+    font-size: 40px;
+    text-align: left;
+    user-select: none;
+    font-family: 'Montserrat', sans-serif; 
+
+
+}
+/**/
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+  background-image: url(images/dan2.jpg);
+  height: 100vh;
+  background-size: cover;
+
+}
+
+.prices {
+  float: left;
+  padding: 15px;
+  margin-top: 70px; 
+  width: 33.333333333333%;
+}
+.products {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-family: 'Montserrat', sans-serif; 
+  background-color: #F5F5F5;
+
+
+}
+
+
+.products .product_description {
+  background-color: black; 
+  font-size: 25px; 
+  color: white;
+  font-family: "Roboto", sans-serif;
+  background-color: rgb(68, 157, 72);
+  text-shadow: 2px 2px 4px #000000;
+
+}
+
+.products:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.products li {
+    border-bottom: 1px solid #DCDCDC;
+    padding: 15px;
+    text-align: center; 
+}
+.product .pricing {
+  background-color: black; 
+  font-size: 15px;
+}
+
+.btn {
+    background-color: rgb(68, 157, 72);
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+p {
+  text-align: center;
+  font-style: italic; 
+  color: white;
+  margin-top: 10px;
+  -webkit-filter: drop-shadow(10px 10px 15px rgba(0,0,0,.75));
+  font-size: 20px;
+  width: 490px;
+  margin-left: 485px;
+  font-family: times;
+  margin-left: 520px;
+  margin-top: 35px;
+}
+
+
+hr {
+    display: block;
+    height: 7px;
+    border: 0;
+    border-top: 7px solid white;
+    padding: 0;
+    -webkit-filter: drop-shadow(3px 5px 3px rgba(0,0,0,.75));
+    margin-top: 28px;
+    margin-bottom: 30px;
+
+}
+
+/*ww*/
+#pageloader{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; /* center children content horizontally */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; /* center children content vertically */
+    z-index: 10000;
+    background: white;
+}
+    
+
+.spinner {
+  width: 70px;
+  text-align: center;
+    opacity: 1;
+    transition: opacity .4s;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+
+#pageloader.dimissloader{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s, visibility 0s 1s;
+}
