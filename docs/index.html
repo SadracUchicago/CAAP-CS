@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    
+    <!-- Last edit: 2/18/2018 3:00 PM -->
+    <!-- Last validated error free: 2/18/2018 7:27 PM -->
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your name, Assignment</title>
+    <link rel="stylesheet" href="style.css">
+    
+     <!-- Cite other's/ideas code -->
+
+     <!--favicon--> 
+     <link rel="icon" href="favicon.ico">
+     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    
+</head>
+
+
+<body>
+
+<!--transition from http://www.javascriptkit.com/dhtmltutors/page-transition-tutorial.shtml-->
+<script>
+
+
+;(function(){
+
+	var animation = false,
+	    animationstring = 'animation',
+	    keyframeprefix = '',
+	    domPrefixes = 'Webkit Moz O ms Khtml'.split(' '),
+	    pfx  = '',
+	    elm = document.createElement('div');
+	
+	if( elm.style.animationName !== undefined ) { animation = true; }    
+	
+	if( animation === false ) {
+	  for( var i = 0; i < domPrefixes.length; i++ ) {
+	    if( elm.style[ domPrefixes[i] + 'AnimationName' ] !== undefined ) {
+	      pfx = domPrefixes[ i ];
+	      animationstring = pfx + 'Animation';
+	      keyframeprefix = '-' + pfx.toLowerCase() + '-';
+	      animation = true;
+	      break;
+	    }
+	  }
+	}
+
+	var minloadingtime = 100
+	var maxloadingtime = 10000
+	
+	var startTime = new Date()
+	var elapsedTime
+	var dismissonloadfunc, maxloadingtimer
+
+	if (animation && document.documentElement && document.documentElement.classList){
+		document.documentElement.classList.add('hidescrollbar')
+
+		window.addEventListener('load', dismissonloadfunc = function(){ // when page loads
+			clearTimeout(maxloadingtimer) // cancel dismissal of transition after maxloadingtime time
+			elapsedTime = new Date() - startTime // get time elapsed once page has loaded
+			var hidepageloadertimer = (elapsedTime > minloadingtime)? 0 : minloadingtime - elapsedTime
+	
+			setTimeout(function(){
+				document.getElementById('pageloader').classList.add('dimissloader') // dismiss transition
+			}, hidepageloadertimer)
+
+			setTimeout(function(){
+				document.documentElement.classList.remove('hidescrollbar')
+			}, hidepageloadertimer + 100) // 100 is the duration of the fade out effect
+	
+		}, false)
+
+		maxloadingtimer = setTimeout(function(){ // force dismissal of page transition after maxloadingtime time
+			window.removeEventListener('load', dismissonloadfunc, false) // cancel onload event function call
+			document.getElementById('pageloader').classList.add('dimissloader') // dismiss transition
+
+			setTimeout(function(){
+				document.documentElement.classList.remove('hidescrollbar')
+			}, 100) // 100 is the duration of the fade out effect
+		}, maxloadingtime)
+
+
+	}
+	else{
+		document.getElementById('pageloader').style.display = 'none'
+	}
+
+	window.addEventListener('beforeunload', function(){ // outro effect
+		document.body.classList.add('fadeout')
+	}, false)
+
+
+})();
+
+</script>
+<!--transition from http://www.javascriptkit.com/dhtmltutors/page-transition-tutorial.shtml-->
+<div id="pageloader">
+
+    <div class="spinner">
+      <div class="bounce1"></div>
+      <div class="bounce2"></div>
+      <div class="bounce3"></div>
+    </div>
+
+</div>
+
+<!--transition from http://www.javascriptkit.com/dhtmltutors/page-transition-tutorial.shtml-->  
+
+
+
+
+	<header> 
+	<nav class="anti-column">
+		<div class="logo"><
+			<img src="website_logo.png" alt="SadPhoto"> 
+	<ul class="menu_navigation">
+		<li class="active"><a href="index.html">MAIN</a></li>
+		<li><a href="pages/about.html">PROFILE</a></li>
+		<li><a href="pages/pricing.html">PRICING</a></li>
+		<li><a href="pages/contact.html">CONTACT ME</a></li> 
+	</ul>
+	<h1>Welcome to Sadrac's Photography!</h1>
+	<h2>SadPhoto</h2>
+	</div>
+	</nav>
+
+	<!--<h2>SadPhoto</h2>-->
+	<div class="button" role="button">
+		<a href="pages/pricing.html">VIEW PRICING</a>
+	</div>
+
+
+	<div class="button_two" role="button">
+		<a href="pages/about.html">ABOUT ME</a>
+	</div>
+	</header>
+    
+	
+
+	
+</body>
+
+</html>
