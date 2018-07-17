@@ -17,3 +17,22 @@ elif Color.lower() == List_Colors[2].lower():
 else:
     print("Hey, I've never heard of that color! I'm just a dumb computer, however. I'll look it up right now")
 
+Live = input("So, where do you live?: ")
+
+print("Hey, turns out my computer grandma also lives in", Live)
+
+print("But where do you want to move?: ")
+
+Move = (input("Where would you like to live the rest of your days?: "))
+
+print(Move, "is a really nice place, but I think the mainframe is a better place for my kind.")
+
+print()
+
+print("Well it was really nice meeting you", Name, "it's great that you like the color", Color, "and that you live in "
+                                                                                                "the wonderful place "
+                                                                                                "known as.", Live,
+      "It's also great you aspire to live in an amazing place like", Move, "Well talk to you late. Bye WORLD!!")
+
+
+
