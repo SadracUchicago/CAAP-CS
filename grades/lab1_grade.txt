@@ -1,0 +1,43 @@
+Lab 1
+CAAP CMSC 101, Summer 2018
+
+Required Elements/Attributes
+  Correct use           3/3
+  Used all              1/3
+  Balanced amount       1/3 
+
+Semantic markup
+  Well structured hierarchies    15/20
+
+Correct use of directories/files
+  Links                 4/5 (* some pictures don't work *)
+  In docs directory     3/5
+  Git sites works       10/10
+
+Validation
+  Both pages and stylesheets  14/20
+
+Design/CSS
+  Dynamic screen size    5/5
+  Efficient use of CSS on multiple pages     8/10
+  Professional design in both pages  5/5
+  
+
+Code style
+  format         3/3 (* code looks good *)
+  clarity        2/3 (* logic is expressed clearly *)
+  decomposition  3/3 (* problems are factored into sensible subproblems *)
+  efficiency     0/2 (* blatant inefficiencies are avoided *)
+
+_total-score_  76/100
+
+graded by Jose Reyes
+
+Comments:
+- Although I like the attempt to use javascript, unless you know what you're doing, it makes the site and directories looks very messy. There's no need to have multiple css stylesheets, there should only be one and if you're using javascript, it should all be externall and at the end of the file to avoid any lag in loading the site. Next time please ask about any help, I can always pull your changes and help you before you submit.
+- Most of the code seems to be copied and changed just a bit. I'm still not sure of what you are capable of doing with just HTML and CSS, since most of it you let javascript do for you, which kind of misses the point of the lab.
+- nav links don't work in the about page.
+    -about page also missing basic template structure
+- scripts should always be at the end of the body, never on top of the file
+- multiple pages and stylesheets missing basic template structure, and validation comments.
+- if something is not mentioned in the lab write-up, like scripts, ask about before using them.
