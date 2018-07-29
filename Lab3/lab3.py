@@ -41,38 +41,46 @@ def is_chutes_ladders():
 
 # function to make and play a game
 def play_game(mode):
+    current_player_value = []
     if mode == 'real':
-        Players = int(input("How many players?: "))
-    question = input(" Go Further?: Y or N : ")
-    dice = 0
-    position = 1
-    while question.upper() == 'Y':
-        dice += roll_die()
-        print("Your dice is", dice)
-        position += dice
-
-        if position in chutes_ladders:
-            if position > chutes_ladders.get(position):
-                position = chutes_ladders.get(position)
-                print("You fell into a chute; your position is now", position)
-            else:
-                position = chutes_ladders.get(position)
-                print("You climbed up a ladder; your position is now", position)
-        else:
-            print("Your position is ", position)
-
-        if position >= 36:
-            print("You went over 36 and have won!!!")
-            break
-        else:
-            pass
-        question = input("Do you want to roll again?: ")
+        players = int(input("How many players?: "))
+        question = input("\nGo Further? [press enter...]: ")
         dice = 0
+        position = 1
+        for i in range(players):
+            current_player_value.append({'player_name': input('Player ' + str(i + 1) + " What is your name?: "), 'value': 1})
+
+        while question.upper() == '':
+            for i in range(players):
+                playah = current_player_value[i]['player_name']
+
+                dice += roll_die()
+                print('\n' + playah, "your dice is", dice)
+                position += (current_player_value[i]['value'] + dice) - 1
+                if position in chutes_ladders:
+                    if position > chutes_ladders.get(position):
+                        position = chutes_ladders.get(position)
+                        current_player_value[i]['value'] = position
+
+                        print("You fell into a chute; your position is now", current_player_value[i]['value'])
+                    else:
+                        position = chutes_ladders.get(position)
+                        current_player_value[i]['value'] = position
+                        print("You climbed up a ladder; your position is now", current_player_value[i]['value'])
+                else:
+                    current_player_value[i]['value'] = position
+                    print("Your position is", position)
+
+                if position >= 13:
+                    print("That position mean", playah, "WON!!!")
+                    return
+
+                question = input("\nNext player roll...")
+                dice = 0
+                position = 1
+
+#####CAN'T SEE PC 
+play_game('real')
 
 
-play_game('user')
-
-
-# Runs the game as a simulation and keeps track of the number of moves it takes to win and returns average
-# def simulate_game():
-#    raise ValueError("todo")
+###CAN'T SEE SIMULATION
