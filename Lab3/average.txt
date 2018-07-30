@@ -1,0 +1,2 @@
+The average in both tests result in a range of 10.8-11.4, with the lower ranges resulting from fewer tests and the higher ones resulting from higher tests. 
+These were comporable in both test sets. 
