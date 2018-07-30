@@ -88,27 +88,34 @@ def play_game(mode):
         while loop == True:
             count += 1
             dice += randint(1, 6)
-            print("Your dice is", dice)
+            # print("Your dice is", dice)
             position += dice
             if position in chutes_ladders:
                 position = chutes_ladders.get(position)
             else:
                 pass
-            print("Your position is ", position)
+            # print("Your position is ", position)
 
             dice = 0
 
             if position >= 36:
-                print("You went over 36 and have won!!!")
+                # print("You went over 36 and have won!!!")
                 break
-        print("It took these many moves to win: ", count)
+        # print("It took these many moves to win: ", count)
+        return count
 
 
-#####CAN'T SEE PC
-play_game('pc')
+# play_game('pc')
 
-# def simulate_game():
+def simulate_game():
+    that = []
+    num = int(input("How many tests [10 OR 100 OR 1,000 OR 10,000 OR 100,000: "))
+    for i in range(0, num):
+        that.append(play_game('pc'))
+    print(that)
+    average = (sum(that) / num)
+    print(average)
+    return average
 
 
-
-###CAN'T SEE SIMULATION
+simulate_game()
