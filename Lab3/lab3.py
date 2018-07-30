@@ -48,12 +48,13 @@ def play_game(mode):
         dice = 0
         position = 1
         for i in range(players):
-            current_player_value.append({'player_name': input('Player ' + str(i + 1) + " What is your name?: "), 'value': 1})
+            current_player_value.append(
+                {'player_name': input('Player ' + str(i + 1) + " What is your name?: "), 'value': 1, 'moves': 0})
 
         while question.upper() == '':
             for i in range(players):
                 playah = current_player_value[i]['player_name']
-
+                current_player_value[i]['moves'] += 1
                 dice += roll_die()
                 print('\n' + playah, "your dice is", dice)
                 position += (current_player_value[i]['value'] + dice) - 1
@@ -72,15 +73,42 @@ def play_game(mode):
                     print("Your position is", position)
 
                 if position >= 13:
-                    print("That position mean", playah, "WON!!!")
+                    print("That position means", playah, "WON!!!")
+                    print("moves to win", current_player_value[i]['moves'])
                     return
-
                 question = input("\nNext player roll...")
                 dice = 0
                 position = 1
+    elif mode == 'pc':
+        dice = 0
+        position = 1
+        loop = True
+        count = 0
 
-#####CAN'T SEE PC 
-play_game('real')
+        while loop == True:
+            count += 1
+            dice += randint(1, 6)
+            print("Your dice is", dice)
+            position += dice
+            if position in chutes_ladders:
+                position = chutes_ladders.get(position)
+            else:
+                pass
+            print("Your position is ", position)
+
+            dice = 0
+
+            if position >= 36:
+                print("You went over 36 and have won!!!")
+                break
+        print("It took these many moves to win: ", count)
+
+
+#####CAN'T SEE PC
+play_game('pc')
+
+# def simulate_game():
+
 
 
 ###CAN'T SEE SIMULATION
