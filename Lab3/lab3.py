@@ -1,5 +1,5 @@
-# YOUR NAME
-# ASSIGNMENT
+# Sadrac Camacho
+# Lab3
 
 from random import randint
 
