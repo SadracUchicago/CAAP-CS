@@ -72,7 +72,7 @@ def play_game(mode):
                     current_player_value[i]['value'] = position
                     print("Your position is", position)
 
-                if position >= 13:
+                if position >= 36:
                     print("That position means", playah, "WON!!!")
                     print("moves to win", current_player_value[i]['moves'])
                     return
